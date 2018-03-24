@@ -379,7 +379,7 @@ bg {
 			<script>
 				var weather = new XMLHttpRequest();
 				weather.open("GET", 
-				 "http://api.wunderground.com/api/038aa9444988e848/conditions/q/TX/Austin.json", false);
+				 "api.wunderground.com/api/038aa9444988e848/conditions/q/TX/Austin.json", false);
 				 weather.send(null);
 				 
 				 var r = JSON.parse(weather.response);
