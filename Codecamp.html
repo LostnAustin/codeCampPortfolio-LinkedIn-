@@ -175,7 +175,7 @@ bg {
 
 
 
-  <body data-spy="scroll" data-target="navbar" data-offset="50">
+<body data-spy="scroll" data-target="navbar" data-offset="50">
 			<div nav class="navbar navbar-default">
 				</nav>
 	
@@ -222,8 +222,19 @@ bg {
 	
   
 
+
+
+
+
+
+
+
+
+
+  <body>
+  
 		<div>
-			<h5 class="text-center name">Chad Lengefeld</h5><br><br>
+			<h5 class="text-center name">Chad Lengefeld</h5><br>
 
 		</div>
 		</div>
@@ -233,9 +244,9 @@ bg {
 			</div>
 
 			<h3 class="text-center" style="color:white">
-				<br><br><br>
+				<br><br>
 				<em> "Be like water, my friend."</em></h3>
-			<h2 class="text-center name4">~ Bruce Lee </h2> <br><br><br>
+			<h2 class="text-center name4 bg">~ Bruce Lee </h2> <br><br>
 
 			<div id="#About bg2" class="page-section bg2">
 				<h3 class="page-section text-center textShadow" id="About">
@@ -243,7 +254,7 @@ bg {
 
 				<h3>
 					<font face="Georgia" >
-						<p class="text-left textShadow spacer" > Currently employed at Indeed via Staffmark, working on the Indeed Prime product. I'm always searching for a challenge and consider myself a dynamic individual who enjoys technology, nature, science, and how systems interact in all kinds
+						<p class="text-left textShadow" > Currently employed at Indeed via Staffmark, working on the Indeed Prime product. I'm always searching for a challenge and consider myself a dynamic individual who enjoys technology, nature, science, and how systems interact in all kinds
 							of ways throughout our lives. My interests cover a wide spectrum, from cryptocurrency and blockchain technology (<i class="fa fa-btc"></i>) to aquaponic vertical gardening and rock climbing. I also have accumulated over fifteen years of
 							research and experience with nutrition and physiology. Let's have a chat, I have a lot of knowledge to share and I'd love to learn something from you.</h3>
 				</font>
@@ -401,12 +412,19 @@ bg {
 	  };
 	  </script>
 			
+	  <div class = "text-center bg5">
+	  <button type="button" onclick="hello()">Like my Art <i class="fa fa-heart-o"></i></button>
+		  <p>Clicks: <a id="clicks">17</a></p>
+		  </i>
+			<br>
 	 
+				  
+					 
 	  
   
- <div class = "bg3"></div>
-	 <div class="weatherapp text-center weather jumbotron">
-		 <div id="weather"></div>
+			 <div class = "bg3"></div>
+			   <div class="weatherapp text-center weather jumbotron">
+				 <div id="weather"></div>
   <p>Current Temp: <span id="temp"></span></p>
   <p>Current Wind: <span id="wind"></span></p>
   <p>Current Relative Humidity: <span id="relative_humidity"></span></p>
@@ -419,7 +437,7 @@ bg {
 			<script>
 				var weather = new XMLHttpRequest();
 				weather.open("GET", 
-				 "api.wunderground.com/api/038aa9444988e848/conditions/q/TX/Austin.json", false);
+				 "http://api.wunderground.com/api/038aa9444988e848/conditions/q/TX/Austin.json", false);
 				 weather.send(null);
 				 
 				 var r = JSON.parse(weather.response);
